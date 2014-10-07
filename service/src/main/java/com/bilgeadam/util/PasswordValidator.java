@@ -16,7 +16,8 @@ public class PasswordValidator {
 	}
 
 	public static boolean isValidLength(String password) {
-		return password.length() >= MIN && password.length() <= MAX;
+		//TODO implement length check
+		return false;
 	}
 
 }

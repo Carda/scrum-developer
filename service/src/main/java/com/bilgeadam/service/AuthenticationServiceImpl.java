@@ -23,9 +23,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 		digest = MessageDigest.getInstance("MD5");
 		digest.update(password.getBytes(), 0, password.length());
 		String md5 = new BigInteger(1, digest.digest()).toString(16);
-		if (!md5.equals(userDetails.getPassword())) {
-			userDetails = null;
-		}
+		//FIXME check password with hashed value
 		return userDetails;
 	}
 
