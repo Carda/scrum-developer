@@ -16,6 +16,7 @@ http://www.springframework.org/schema/data/jpa
 http://www.springframework.org/schema/util
 http://www.springframework.org/schema/util/spring-util-3.1.xsd">
 
+
 	<tx:annotation-driven transaction-manager="transactionManager" />
 
 	<!-- Activate Spring Data JPA repository support -->
